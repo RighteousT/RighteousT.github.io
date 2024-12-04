@@ -1,0 +1,71 @@
+/* General Styles */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Space.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+  }
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    color: #f0f0f0; /* Light text color for readability */
+}
+
+header .hero {
+    text-align: center;
+    padding: 20px;
+    color: #ffffff; /* White text for the hero section */
+}
+
+header img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Layout for Main Content */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skills, .about-me {
+    width: 45%;
+    padding: 10px;
+    background-color: #333333; /* Dark grey background for contrast */
+    border-radius: 8px;
+}
+
+.inlineHeader {
+    color: #ffcc00; /* Highlighted header color */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Skills List Styling */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    color: #f0f0f0; /* Light text color */
+}
+
+.skills-list li strong {
+    color: #00acee; /* Light blue color for skill names */
+}
+
+.about-me p {
+    line-height: 1.6;
+    color: #f0f0f0; /* Consistent light text color */
+}

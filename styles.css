@@ -1,0 +1,341 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Space.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #f0f0f0; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  height: 170vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  font-style: italic;
+  text-align: center;
+  color: rgb(5, 140, 251);
+  margin-top: 20px;
+  position: relative; 
+}
+
+.hero img {
+  width: auto; 
+  height: auto;
+  max-width: 60%; 
+  display: block; 
+  margin: 0 auto; 
+  margin-top: 200px;
+}
+
+.hero h2 {
+  margin-top: 20px;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+  position: absolute;
+  top: 0;
+  right: 0; 
+  margin-top: 10px; 
+  margin-right: 20px;
+  font-size: 17px; 
+}
+
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+
+transition: 0.5 ease;
+}
+
+ul li a:hover{
+  background-color: aqua;
+  color: black;
+
+}
+
+ul li.active a{
+  background-attachment: #fff;
+  color: black;
+}
+
+.main{
+  max-width: 1100px;;
+}
+
+
+.title{
+  position: absolute; 
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.title h1{
+  color: lightblue;
+  font-size: 60px;
+}
+
+.button{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.btn{
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  transition: 0.5 ease;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background-color: aqua;
+  color: black;
+}
+
+
+header.hero {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff; 
+}
+
+header img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+header p {
+  font-size: 18px; 
+  line-height: 1.6; 
+  margin: 20px auto;
+  max-width: 800px; 
+  color: #f0f0f0; 
+  text-align: center; 
+}
+
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+main.content {
+  padding-top: 20px; 
+  display: flex;
+}
+
+.skills, .about-me {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.inlineHeader {
+  color: #ffcc00; 
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  color: #f0f0f0; 
+}
+
+.skills-list li strong {
+  color: #00acee; 
+}
+
+.about-me p {
+  line-height: 1.6;
+  color: #f0f0f0; 
+
+}
+
+footer {
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.Resume {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Resume h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.resume-arrow {
+  width: 150px;    
+  height: auto;
+  margin: 15px auto;  
+  display: block;  
+  transform: rotate(360deg);  
+}
+
+.Resume a {
+  color: aqua;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.Resume a:hover {
+  color: lightblue;
+}
+
+.contact-me {
+  background-color: rgba(51, 51, 51, 0.8); 
+  padding: 30px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 800px;
+  border-radius: 8px;
+  color: #f0f0f0;
+}
+
+.contact-me h2 {
+  color: #ffcc00;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-me p {
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.contact-me form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-me label {
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.contact-me input[type="text"],
+.contact-me input[type="email"],
+.contact-me textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.contact-me button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: aqua;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-me button:hover {
+  background-color: lightblue;
+}
+
+.contact-me a {
+  color: aqua;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.contact-me a:hover {
+  color: lightblue;
+}
+
+body.side-quests-page {
+  height: 150vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+.side-quests-content {
+  flex-grow: 1;
+}
+
+.quests {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quest {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: aqua;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.quest h2 {
+  color: #ffcc00;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.quest p, .quest pre {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.quest pre {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  color: #00acee;
+}
